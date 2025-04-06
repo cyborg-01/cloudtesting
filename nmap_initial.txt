@@ -1,0 +1,29 @@
+# Nmap 7.95 scan initiated Sun Apr  6 12:32:46 2025 as: /usr/lib/nmap/nmap -A -T4 -oN nmap_initial.txt 16.170.155.63
+Nmap scan report for ec2-16-170-155-63.eu-north-1.compute.amazonaws.com (16.170.155.63)
+Host is up (0.0053s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 62:79:1c:99:19:61:f8:e0:12:fa:58:75:2c:d0:d9:7a (ECDSA)
+|_  256 cb:63:15:38:43:41:9a:ff:d1:8c:c2:f7:6c:73:f2:9c (ED25519)
+80/tcp   open  http    Apache httpd 2.4.58 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+3306/tcp open  mysql   MySQL (unauthorized)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|VoIP adapter|general purpose
+Running (JUST GUESSING): Oracle Virtualbox (96%), Slirp (96%), AT&T embedded (92%), QEMU (91%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:danny_gasparovski:slirp cpe:/a:qemu:qemu
+Aggressive OS guesses: Oracle Virtualbox Slirp NAT bridge (96%), AT&T BGW210 voice gateway (92%), QEMU user mode network gateway (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.82 ms 10.0.2.2
+2   0.30 ms ec2-16-170-155-63.eu-north-1.compute.amazonaws.com (16.170.155.63)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr  6 12:33:05 2025 -- 1 IP address (1 host up) scanned in 19.93 seconds
