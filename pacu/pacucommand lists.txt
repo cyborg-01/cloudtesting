@@ -1,0 +1,57 @@
+1. Account & Identity Recon
+bash
+Copy
+Edit
+run aws__enum_account
+run iam__enum_users_roles_policies_groups
+run iam__enum_permissions
+run iam__enum_action_query
+✅ These help you map users, roles, and permissions — and detect privilege escalation risks.
+
+🧠 2. EC2 & Storage Recon
+bash
+Copy
+Edit
+run ec2__enum
+run ebs__enum_volumes_snapshots
+run rds__enum
+run rds__enum_snapshots
+✅ Reveal EC2 info, attached volumes, RDS databases, and unencrypted storage.
+
+🔐 3. Secrets & Sensitive Data
+bash
+Copy
+Edit
+run secrets__enum
+run elasticbeanstalk__enum
+run codebuild__enum
+✅ Find exposed secrets in Secrets Manager, Beanstalk, and CodeBuild projects.
+
+📦 4. Other Key Services
+bash
+Copy
+Edit
+run s3__enum           # if available, to analyze S3 bucket permissions
+run lambda__enum
+run dynamodb__enum
+run glue__enum
+run apigateway__enum
+✅ Enumerate AWS services developers might misconfigure.
+
+🌐 5. DNS, Networking & Logging
+bash
+Copy
+Edit
+run route53__enum
+run elb__enum_logging
+run detection__enum_services
+run organizations__enum
+✅ Check if DNS logging and access logging are enabled — useful for audit trails.
+
+🧾 After Running Modules
+Once you've run some of these, generate the session report:
+
+bash
+Copy
+Edit
+report
