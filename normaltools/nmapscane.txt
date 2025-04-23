@@ -1,0 +1,48 @@
+# Nmap 7.95 scan initiated Wed Apr  9 14:18:15 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -p- -oN /home/kali/Desktop/Maintesting/nmapscane.txt 16.170.155.63
+Nmap scan report for ec2-16-170-155-63.eu-north-1.compute.amazonaws.com (16.170.155.63)
+Host is up (0.0018s latency).
+Not shown: 65512 filtered tcp ports (no-response)
+PORT      STATE  SERVICE          VERSION
+21/tcp    open   tcpwrapped
+22/tcp    open   tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+25/tcp    open   tcpwrapped
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=ip-172-31-25-218.eu-north-1.compute.internal
+| Subject Alternative Name: DNS:ip-172-31-25-218.eu-north-1.compute.internal
+| Not valid before: 2025-03-20T15:40:26
+|_Not valid after:  2035-03-18T15:40:26
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp    open   tcpwrapped
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+110/tcp   closed pop3
+139/tcp   open   tcpwrapped
+256/tcp   closed fw1-secureremote
+445/tcp   open   tcpwrapped
+3306/tcp  open   tcpwrapped
+4588/tcp  closed unknown
+14914/tcp closed unknown
+19044/tcp closed unknown
+28915/tcp closed unknown
+31843/tcp closed unknown
+37743/tcp closed unknown
+39974/tcp closed unknown
+44021/tcp closed unknown
+44702/tcp closed unknown
+46550/tcp closed unknown
+46893/tcp closed unknown
+56570/tcp closed unknown
+57701/tcp closed unknown
+58784/tcp closed unknown
+
+Host script results:
+|_nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-04-09T19:31:27
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 15:31:56 2025 -- 1 IP address (1 host up) scanned in 4420.52 seconds

@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Wed Apr  9 15:33:47 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -p80,21,22, -oN /home/kali/Desktop/Maintesting/nmapscane80.txt 16.170.155.63
+Nmap scan report for ec2-16-170-155-63.eu-north-1.compute.amazonaws.com (16.170.155.63)
+Host is up (0.014s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 62:79:1c:99:19:61:f8:e0:12:fa:58:75:2c:d0:d9:7a (ECDSA)
+|_  256 cb:63:15:38:43:41:9a:ff:d1:8c:c2:f7:6c:73:f2:9c (ED25519)
+80/tcp open  http    Apache httpd 2.4.58 ((Ubuntu))
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+| http-title: Login :: Damn Vulnerable Web Application (DVWA)
+|_Requested resource was login.php
+| http-robots.txt: 1 disallowed entry 
+|_/
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 15:33:59 2025 -- 1 IP address (1 host up) scanned in 12.81 seconds

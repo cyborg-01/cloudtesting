@@ -1,0 +1,24 @@
+/dvwa                [36m (Status: 301)[0m [Size: 313][34m [--> http://16.170.155.63/dvwa/][0m
+/login.php           [32m (Status: 200)[0m [Size: 1342]
+/index.php           [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/vulnerabilities/xss_r/[36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
+/logout.php          [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/vulnerabilities/brute/[36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
+/vulnerabilities/xss_s/[36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
+/vulnerabilities/fi/ [36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
+/config              [36m (Status: 301)[0m [Size: 315][34m [--> http://16.170.155.63/config/][0m
+/config/config.inc.php[32m (Status: 200)[0m [Size: 0]
+/vulnerabilities/upload/[36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
+/vulnerabilities/csrf/[36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
+/instructions.php    [32m (Status: 200)[0m [Size: 38568]
+/robots.txt          [32m (Status: 200)[0m [Size: 25]
+/favicon.ico         [32m (Status: 200)[0m [Size: 1406]
+/about.php           [32m (Status: 200)[0m [Size: 3727]
+/.htaccess           [33m (Status: 403)[0m [Size: 278]
+/.htpasswd           [33m (Status: 403)[0m [Size: 278]
+/setup.php           [32m (Status: 200)[0m [Size: 4275]
+/phpinfo.php         [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/vulnerabilities/sqli/[36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
+/security.php        [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/vulnerabilities/    [32m (Status: 200)[0m [Size: 5289]
+/vulnerabilities/sqli_blind/[36m (Status: 302)[0m [Size: 0][34m [--> ../../login.php][0m
