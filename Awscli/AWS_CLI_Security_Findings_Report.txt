@@ -1,0 +1,8 @@
+AWS CLI Security Assessment Summary
+Generated on: 2025-04-17 14:47:26
+
+EC2 Instances Found: 1
+Security Groups with open inbound rules: 2
+IAM Users Found: 2
+IAM Roles Found: 2
+IAM Policies Defined: 1
